@@ -1,0 +1,31 @@
+﻿<Window x:Class="Gui_client.CreateRoomWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Create Room" Height="300" Width="400">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Label Content="Time Out:" Grid.Row="0" Margin="0 0 10 5" />
+        <TextBox x:Name="TimeOutTextBox" Grid.Row="0" Margin="120 0 0 5" />
+
+        <Label Content="Max Users:" Grid.Row="1" Margin="0 0 10 5" />
+        <TextBox x:Name="MaxUsersTextBox" Grid.Row="1" Margin="120 0 0 5" />
+
+        <Label Content="Question Count:" Grid.Row="2" Margin="0 0 10 5" />
+        <TextBox x:Name="QuestionCountTextBox" Grid.Row="2" Margin="120 0 0 5" />
+
+        <Label Content="Name:" Grid.Row="3" Margin="0 0 10 5" />
+        <TextBox x:Name="NameTextBox" Grid.Row="3" Margin="120 0 0 5" />
+
+        <Button Content="Create" Grid.Row="4" Width="100" HorizontalAlignment="Left" Click="CreateButton_Click" />
+        <Button Content="Exit" Grid.Row="4" Width="100" HorizontalAlignment="Right" Click="ExitButton_Click" />
+    </Grid>
+</Window>

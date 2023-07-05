@@ -1,0 +1,26 @@
+﻿<Window x:Class="Gui_client.TriviaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Trivia Page" Height="450" Width="800">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="questionLabel" Grid.Row="0" Text="" FontSize="24" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center"/>
+
+        <TextBlock x:Name="timerTextBlock" Grid.Row="1" Text="5" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center"/>
+
+        <StackPanel Grid.Row="2" Orientation="Vertical" Margin="0 20">
+            <Button x:Name="option1Button" Content="" Tag="0" Margin="0 0 0 10" Height="40" FontSize="16" Click="Button_Click" />
+            <Button x:Name="option2Button" Content="" Tag="1" Margin="0 0 0 10" Height="40" FontSize="16" Click="Button_Click" />
+            <Button x:Name="option3Button" Content="" Tag="2" Margin="0 0 0 10" Height="40" FontSize="16" Click="Button_Click" />
+            <Button x:Name="option4Button" Content="" Tag="3" Height="40" FontSize="16" Click="Button_Click" />
+        </StackPanel>
+
+        <Button x:Name="leaveGameButton" Content="Leave Game" Grid.Row="3" Margin="0 20" Height="40" FontSize="16" Click="LeaveGameButton_Click" />
+    </Grid>
+</Window>
